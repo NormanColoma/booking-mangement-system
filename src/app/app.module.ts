@@ -3,7 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
 import { AppComponent } from './app.component';
+import { BookingDashboardModule } from './booking-dashboard/dashboard.module';
+import { AppRoutingModule } from './app.routing.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +16,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BookingDashboardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
