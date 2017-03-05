@@ -12,10 +12,6 @@ export class BookingFormComponent{
     booking: Booking;
 
     constructor() {
-        this.booking = {
-            name: '',
-            description: ''
-        };
     }
 
     @Output()

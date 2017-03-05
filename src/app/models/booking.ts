@@ -1,4 +1,9 @@
 export interface Booking {
-    name: String;
+    hotel: String;
+    price: Number;
+    user: {
+        name: String;
+        email: String;
+    };
     description: String;
 }

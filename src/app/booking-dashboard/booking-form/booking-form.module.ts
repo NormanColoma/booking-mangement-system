@@ -6,7 +6,8 @@ import { BookingFormComponent } from './booking-form.component';
 
 @NgModule({
     imports: [
-        FormsModule
+        FormsModule,
+        CommonModule
     ],
     declarations: [
         BookingFormComponent
