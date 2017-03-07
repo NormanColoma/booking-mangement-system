@@ -9,7 +9,7 @@ import { BookingFormModule } from './booking-form/booking-form.module';
   imports: [
     CommonModule,
     BookingDashboardRoutingModule,
-    BookingFormModule
+    BookingFormModule,
   ],
   declarations: [
     BookingDashboardComponent

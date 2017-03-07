@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BookingDashboardModule } from './booking-dashboard/dashboard.module';
+import { NavbarModule } from './navbar/navbar.module';
 import { AppRoutingModule } from './app.routing.module';
 
 
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app.routing.module';
     FormsModule,
     HttpModule,
     BookingDashboardModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    NavbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
