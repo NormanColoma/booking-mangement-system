@@ -6,7 +6,7 @@
                 class="row justify-content-center" 
                 ngModelGroup="user"
             >
-                <div class="form-group col-lg-6">
+                <div class="form-group col-lg-6" [ngClass]="{'has-danger' : userName.errors && userName.touched }">
                     <label for="name">User name</label>
                     <input 
                         type="text" 
@@ -23,7 +23,7 @@
                         Field required
                     </div>
                 </div>      
-                <div class="form-group col-lg-6">
+                <div class="form-group col-lg-6" [ngClass]="{'has-danger' : userEmail.errors && userEmail.touched }">
                     <label for="email">User email</label>
                     <input 
                         type="text" 
