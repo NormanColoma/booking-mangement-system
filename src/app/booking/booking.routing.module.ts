@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BookingListComponent } from "./booking-list/booking-list.component";
 import { BookingComponent } from "./booking.component";
-import { BookingFormComponent } from "./booking-form/booking-form.component";
 import { NewBookingComponent } from "./booking-new/booking-new.component";
 
 const bookingRoutes : Routes = [
