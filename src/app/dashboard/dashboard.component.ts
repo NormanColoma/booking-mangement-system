@@ -7,10 +7,6 @@ import  { Booking } from '../models/booking';
     styleUrls: []
 })
 
-export class BookingDashboardComponent {
+export class DashboardComponent {
     title = 'Dashboard';
-
-    onSubmitBooking(event : Booking){
-        console.log(event);
-    }
 }

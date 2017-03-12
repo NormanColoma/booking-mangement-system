@@ -5,9 +5,10 @@ import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import { BookingDashboardModule } from './booking-dashboard/dashboard.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { AppRoutingModule } from './app.routing.module';
+import { BookingModule } from "./booking/booking.module";
 
 
 @NgModule({
@@ -18,9 +19,10 @@ import { AppRoutingModule } from './app.routing.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    BookingDashboardModule,
+    DashboardModule,
+    BookingModule,
     AppRoutingModule, 
-    NavbarModule
+    NavbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
