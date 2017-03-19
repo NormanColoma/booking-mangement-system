@@ -5,6 +5,7 @@ import { BookingRoutingModule } from "./booking.routing.module";
 import { BookingListModule } from "./booking-list/booking-list.module";
 import { BookingComponent } from "./booking.component";
 import { NewBookingModule } from "./booking-new/booking-new.module";
+import { BookingService } from './booking.service';
 
 
 @NgModule({
@@ -19,6 +20,9 @@ import { NewBookingModule } from "./booking-new/booking-new.module";
     ],
     exports: [
         BookingComponent
+    ],
+    providers: [
+        BookingService
     ]
 })
 

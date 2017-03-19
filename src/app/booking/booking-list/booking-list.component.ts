@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { BookingService } from '../booking.service';
+import { Booking } from "../../models/booking";
 
 @Component({
     selector: 'booking-list', 
@@ -7,6 +8,13 @@ import { Component, Input } from '@angular/core';
     styleUrls: []
 })
 
-export class BookingListComponent {
-    
+export class BookingListComponent implements OnInit {
+    bookings: Booking [];
+    constructor(private bookingService: BookingService){
+
+    }
+    ngOnInit(): void {
+        this.bookings = this.bookingService.getBookings();
+        console.log(this.bookings);
+    }
 }
