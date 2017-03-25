@@ -5,7 +5,7 @@ import { Booking } from "../../models/booking";
 @Component({
     selector: 'booking-list', 
     templateUrl: './booking-list.component.html',
-    styleUrls: []
+    styleUrls: ['./booking-list.component.css']
 })
 
 export class BookingListComponent implements OnInit {

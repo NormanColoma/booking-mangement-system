@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookingListComponent } from "./booking-list/booking-list.component";
 import { BookingComponent } from "./booking.component";
 import { NewBookingComponent } from "./booking-new/booking-new.component";
+import { BookingDetailsComponent } from "./booking-details/booking-details.component";
 
 const bookingRoutes : Routes = [
     {
@@ -12,7 +13,13 @@ const bookingRoutes : Routes = [
         children: [
             {
                 path: '',
-                component: BookingListComponent
+                component: BookingListComponent,
+                children: [
+                    {
+                        path: ':id',
+                        component: BookingDetailsComponent   
+                    }
+                ]
             }, 
             {
                 path: 'new',
