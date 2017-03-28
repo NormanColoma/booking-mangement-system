@@ -1,4 +1,5 @@
 export interface Booking {
+    id: Number;
     hotel: String;
     price: Number;
     user: {

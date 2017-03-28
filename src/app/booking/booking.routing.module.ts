@@ -8,22 +8,19 @@ import { BookingDetailsComponent } from "./booking-details/booking-details.compo
 
 const bookingRoutes : Routes = [
     {
-        path: 'bookings',
-        component: BookingComponent,
+        path: '',
         children: [
             {
                 path: '',
                 component: BookingListComponent,
-                children: [
-                    {
-                        path: ':id',
-                        component: BookingDetailsComponent   
-                    }
-                ]
             }, 
             {
                 path: 'new',
                 component: NewBookingComponent
+            },
+            {
+                path: ':id',
+                component: BookingDetailsComponent   
             }
         ]
     }

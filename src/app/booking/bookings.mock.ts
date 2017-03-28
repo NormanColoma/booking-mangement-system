@@ -2,6 +2,7 @@ import { Booking } from '../models/booking';
 
 export const BOOKINGS : Booking [] = [
     {
+        id: 1,
         hotel: 'Alabama Star',
         price: 350.25,
         user: {
@@ -11,6 +12,7 @@ export const BOOKINGS : Booking [] = [
         description: 'This customer is very important for the company'
     },
     {
+        id: 2,
         hotel: 'Reina Sofía',
         price: 350.25,
         user: {
